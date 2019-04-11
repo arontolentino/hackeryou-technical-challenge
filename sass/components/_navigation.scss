@@ -1,0 +1,36 @@
+.navigation {
+
+    &__list {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 1.1rem 0;
+    border-top: $default-border;
+    border-bottom: $default-border;
+    }
+    
+
+    &__item {
+        display: inline-block;
+        text-transform: uppercase;
+        margin: 0.1rem 1rem 0.1rem 1rem;
+    }
+
+    &__link {
+        color: $color-grey-dark;
+        text-decoration: none;
+
+        &--active {
+            font-weight: 800;
+        }
+
+        &:visited {
+            color: $color-grey-dark;
+        }
+
+        &:hover {
+            color: $hackeryou-red;
+        }
+    }
+}

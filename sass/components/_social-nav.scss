@@ -1,0 +1,19 @@
+.social-nav {
+    &__item {
+        display: inline-block;
+        
+        &--icon {
+            font-size: 1.4rem;
+            margin: 0 0.35rem;
+            color: $color-grey-dark;
+
+            &:visited {
+                color: $color-grey-dark;
+            }
+    
+            &:hover {
+                color: $hackeryou-red;
+            }
+        }
+    }
+}

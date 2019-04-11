@@ -1,0 +1,25 @@
+.about {
+
+    &__content {
+        padding-top: 1.5rem;
+        font-size: 1.3rem;
+        column-count: 3;
+        text-align: justify;
+        column-gap: 2.8rem;
+        line-height: 2.45rem;
+        hyphens: auto;
+
+        @include respond(tab-port) {
+            column-count: 2;
+        }
+
+        @include respond(phone) {
+            font-size: 1.35rem;
+            column-count: 1;
+        }
+    }
+
+    &__text {
+        padding-bottom: 1.5rem;
+    }
+}

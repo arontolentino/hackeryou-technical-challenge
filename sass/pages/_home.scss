@@ -1,0 +1,38 @@
+.section-hero {
+    padding: 2.6rem 0 3rem 0;
+
+    @include respond(tab-port) {
+        padding: 2.6rem 0 1rem 0
+    }
+
+    @include respond(phone) {
+        padding: 2.6rem 0 1rem 0
+    }
+}
+
+.section-about {
+    padding: 2.6rem 0 2rem 0;
+
+    @include respond(phone) {
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+.section-gallery {
+    padding: 2rem 0 3.5rem 0;
+
+    @include respond(tab-port) {
+        padding: 1rem 0 2rem 0;
+    }
+
+    @include respond(phone) {
+        padding: 1rem 0 1rem 0;
+    }
+}
+
+.section-newsletter {
+    padding-top: 2.6rem;
+}
+
+
+

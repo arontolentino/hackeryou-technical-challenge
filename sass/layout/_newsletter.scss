@@ -1,0 +1,53 @@
+.newsletter {
+    border-top: $default-border;
+    text-align: center;
+    padding: 4.5rem 0;
+
+    &__form {
+        padding: 0.75rem 0;
+        
+    }
+
+    &__element {
+        display: inline-block;
+        vertical-align: middle;
+
+        @include respond(phone) {
+            display: block;
+        }
+
+        &--email {
+            height: 3.9rem;
+            width: 28rem;
+            text-align: center;
+            font-family: $secondary-font-family;
+            font-size: 1.4rem;
+            font-style: italic;
+            border: $default-border;
+            margin-right: 0.18rem;
+            vertical-align: middle;
+
+            @include respond(phone) {
+                width: 90%;
+                margin: 1rem 0 1rem 0;
+            }
+        }
+
+        &--btn {
+            height: 3.9rem;
+            width: 13.5rem;
+            font-size: 1.15rem;
+            font-weight: 500;
+            background-color: $color-white;
+            text-transform: uppercase;
+            border: $default-border;
+            vertical-align: middle;
+            transition: all .2s;
+    
+            &:hover {
+                background-color: $hackeryou-red;
+                color: $color-white;
+            }   
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.footer {
+    &__navigation {
+        padding: 1.8rem 0 !important; // Forces footer navigation to have larger top and bottom padding compared to header navigation
+        margin-bottom: 1.5rem;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__column {
+        flex: 50%;
+
+        &--1 {
+            text-align: left;
+        }
+
+        &--2 {
+            text-align: right;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.35rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+
+        @include respond(phone) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__social {
+
+        &--item {
+            display: inline-block;
+
+            &--icon {
+                font-size: 1.4rem;
+                margin: 0 0.35rem;
+                color: $color-grey-dark;
+            }
+        }
+    }
+    
+}
